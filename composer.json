@@ -1,0 +1,128 @@
+{
+    "name": "cms/project",
+    "version": "5.1.0",
+    "keywords": ["phalcon", "doctrine", "angular", "angular material"],
+    "description": "Centralized Management Solutions",
+    "type": "project",
+    "license": "MIT",
+    "provide": {
+        "ext-mongo": "1.6.16",
+        "ext-mongodb": "^1.2.0",
+        "ext-phalcon": "^4.0.0-rc.3"
+    },
+    "require": {
+        "doctrine/mongodb": "^1.7.0",
+        "doctrine/mongodb-odm": "^2.1.2",
+        "doctrine/mongodb-odm-bundle": "^4.2.1",
+        "doctrine/orm": "^2.7.0",
+        "mark-gerarts/auto-mapper-plus": "^1.3.7",
+        "firebase/php-jwt": "^5.0",
+        "anahkiasen/underscore-php": "dev-master",
+        "zeptech/annotations": "^1.1",
+        "doctrine/annotations": "^1.8.0",
+        "abraham/twitteroauth": "^0.9.2",
+        "alcaeus/mongo-php-adapter": "^1.1",
+        "opis/closure": "^3.5.1",
+        "php-ds/php-ds": "^1.2",
+
+        "cms/bootstrap": "^1.0.0",
+        "cms/web": "^1.0.0",
+        "cms/infrastructure": "^1.1.0",
+        "cms/system": "^1.0.0",
+        "cms/business": "^1.0.0",
+        "cms/feature-install": "^1.0.0",
+        "cms/feature-administrative": "^1.0.0",
+        "cms/feature-profile": "^2.0.0",
+        "cms/feature-user-account": "^1.0.0",
+        "cms/feature-store": "^1.0.0"
+    },
+    "require-dev": {
+        "phalcon/devtools": "^4.0.0",
+        "phpunit/phpunit": "^8.5.8",
+        "comsolit/html-builder": "^1.0",
+        "phalcon/cphalcon": "^4.0.3",
+        "phalcon/ide-stubs": "^4.0.3",
+        "vimeo/psalm": "^3.8"
+    },
+    "authors": [{
+        "name": "Brian Nguyen",
+        "email": "briancvn@gmail.com"
+    }],
+	"repositories": {
+		"cms/bootstrap": {
+			"type": "path",
+			"url": "./app/Bootstrap",
+			"options": {
+				"symlink": true
+			}
+        },
+        "cms/web": {
+			"type": "path",
+			"url": "./app/Modules/Web",
+			"options": {
+				"symlink": true
+			}
+		},
+        "cms/infrastructure": {
+            "type": "path",
+            "url": "./app/Modules/Infrastructure",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/system": {
+            "type": "path",
+            "url": "./app/Modules/System",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/business": {
+            "type": "path",
+            "url": "./app/Modules/Business",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/feature-install": {
+            "type": "path",
+            "url": "./app/Modules/Features/Install",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/feature-administrative": {
+            "type": "path",
+            "url": "./app/Modules/Features/Administrative",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/feature-profile": {
+            "type": "path",
+            "url": "./app/Modules/Features/Profile",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/feature-user-account": {
+            "type": "path",
+            "url": "./app/Modules/Features/UserAccount",
+            "options": {
+                "symlink": true
+            }
+        },
+        "cms/feature-store": {
+            "type": "path",
+            "url": "./app/Modules/Features/Store",
+            "options": {
+                "symlink": true
+            }
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "app/"
+        ]
+    }
+}
